@@ -22,6 +22,11 @@ module RestActionsConcern
     respond_with @resource, location: collection_path
   end
   
+  def show
+    @resource = resource_class.find(params[:id])
+    respond_with @resource
+  end
+  
   def edit
     @resource = resource_class.find(params[:id])
     respond_with @resource

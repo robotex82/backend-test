@@ -8,6 +8,7 @@
         - @resource.errors.full_messages.each do |msg|
           %li= msg
   = render 'form', form: f
-  = f.button :submit
+  = f.button :submit, class: 'btn btn-primary'
 
-= link_to 'Back', collection_path
+%div.well
+  = link_to 'Back', collection_path, class: 'btn btn-default'

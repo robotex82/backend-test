@@ -2,8 +2,8 @@
 
 = simple_form_for(@resource, url: resource_path(@resource)) do |f|
   = render 'form', form: f
-  = f.button :submit
+  = f.button :submit, class: 'btn btn-primary'
 
-= link_to 'Show', resource_path(@resource)
-\|
-= link_to 'Back', collection_path
+%div.well
+  = link_to 'Show', resource_path(@resource), class: 'btn btn-default'
+  = link_to 'Back', collection_path, class: 'btn btn-default'
