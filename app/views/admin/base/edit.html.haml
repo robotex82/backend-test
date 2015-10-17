@@ -1,0 +1,9 @@
+%h1= t('admin.resource.edit.title', inflections)
+
+= simple_form_for(@resource, url: resource_path(@resource)) do |f|
+  = render 'form', form: f
+  = f.button :submit
+
+= link_to 'Show', resource_path(@resource)
+\|
+= link_to 'Back', collection_path
