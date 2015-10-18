@@ -54,3 +54,5 @@ gem 'responders'
 gem 'haml-rails'
 
 gem 'admino'
+gem 'kaminari'
+gem 'bootstrap-kaminari-views'
