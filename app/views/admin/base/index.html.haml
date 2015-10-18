@@ -1,11 +1,14 @@
-%h1= t('admin.resource.index.title', inflections)
+%div.panel.panel-default
+  %div.panel-heading
+    %h1= t('admin.resource.index.title', inflections)
 
-= table_for(@collection, class: resource_class, presenter: BootstrapTablePresenter) do |table, record|
-  = render 'table', table: table, resource_class: resource_class
-  
-  = table.actions do
-    = table.action :show, resource_path(record)
-    = table.action :edit, edit_resource_path(record)
-    = table.action :destroy, resource_path(record), method: :delete
+  = table_for(@collection, class: resource_class, presenter: BootstrapTablePresenter) do |table, record|
+    = render 'table', table: table, resource_class: resource_class
 
-= link_to t('admin.resource.index.actions.new', inflections), new_resource_path, class: 'btn btn-primary'
+    = table.actions do
+      = table.action :show, resource_path(record)
+      = table.action :edit, edit_resource_path(record)
+      = table.action :destroy, resource_path(record), method: :delete
+
+  %div.panel-footer
+    = link_to t('admin.resource.index.actions.new', inflections), new_resource_path, class: 'btn btn-primary'
