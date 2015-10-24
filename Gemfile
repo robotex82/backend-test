@@ -54,3 +54,6 @@ gem 'responders'
 gem 'haml-rails'
 
 gem 'admino'
+
+gem 'modular_engine', git: 'https://github.com/eugenmueller/Modular-Engine.git'
+gem 'itsf_backend', path: './engines/itsf/backend'

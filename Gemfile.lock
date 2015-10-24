@@ -1,3 +1,15 @@
+GIT
+  remote: https://github.com/eugenmueller/Modular-Engine.git
+  revision: ecf7bfe79613374a1b2d1cdd11008f8f53a23150
+  specs:
+    modular_engine (0.9.5)
+
+PATH
+  remote: ./engines/itsf/backend
+  specs:
+    itsf_backend (0.0.1)
+      rails (~> 4.2.4)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -193,9 +205,11 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
   haml-rails
+  itsf_backend!
   jbuilder (~> 2.0)
   jquery-rails
   less-rails
+  modular_engine!
   rails (~> 4.2.1)
   responders
   sass-rails (~> 5.0)
