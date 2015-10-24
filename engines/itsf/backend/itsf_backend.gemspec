@@ -18,6 +18,8 @@ Gem::Specification.new do |s|
   s.test_files = Dir["spec/**/*"]
 
   s.add_dependency "rails", "~> 4.2.4"
+  s.add_dependency 'kaminari'
+  s.add_dependency 'bootstrap-kaminari-views'
 
   s.add_development_dependency 'rails-dummy'
   s.add_development_dependency 'rspec-rails'
